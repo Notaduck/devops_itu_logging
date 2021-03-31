@@ -44,10 +44,10 @@ services:
       - elk 
     volumes:
       - type: bind
-        source: ${ELK_DIR}/nginx.conf
+        source: ${PWD}/nginx.conf
         target: /etc/nginx/nginx.conf
       - type: bind
-        source: ${ELK_DIR}/.htpasswd
+        source: ${PWD}/.htpasswd
         target: /etc/nginx/.htpasswd
         
 networks:
